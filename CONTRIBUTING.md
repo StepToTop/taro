@@ -48,7 +48,7 @@ $ pnpm --filter [package-name] run dev
 情况一、测试项目 `package.json` 中有声明对该包的依赖
 
 1. 进入需要调试的子包的根目录，然后执行 `pnpm link --global`。
-2. 进入测试项目的根目录，然后执行 `pnpm link --global [package-name]`。
+2. 进入测试项目的根目录，然后执行 `pnpm link [package-name]`。
 
 情况二、测试项目 `package.json` 中没有声明对该包的依赖，该依赖包是被某个 Taro 包间接依赖的，如 `@tarojs/runner-utils`。
 
